@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="header">
+      <h2 class="titleMobile" id="titleMobile"></h2>
+
+      <div class="right">
+        <a class="headerLogo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="48"
+            height="48"
+            viewBox="0 0 88 88"
+            class=""
+          >
+            <g fill="none">
+              <path
+                fill="#fff"
+                d="M79.245 20.322l-.627.726c-2.474 2.656-5.814 4.2-9.462 4.313-.16.023-.342.023-.502.023-.456 0-.878-.023-1.31-.068 8.595 10.1 9.895 24.968 2.222 36.579-7.638 11.542-21.774 16.252-34.428 12.484h-.08c-5.13-1.34-10.944.68-14.022 5.414 3.192-4.847 2.736-11.055-.798-15.322v-.045c-8.333-10.079-9.473-24.72-1.87-36.16C26.692 15.67 42.766 11.22 56.195 17.031c-.57-1.476-.935-3.065-1.026-4.688-.114-2.95.741-5.788 2.371-8.171-18.012-5.902-38.532.567-49.476 17.137C-5.104 41.171.425 67.842 20.261 80.893c19.882 13.064 46.592 7.502 59.702-12.246 10.032-15.174 9.177-34.331-.707-48.348l-.011.023z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M31.969 10.22c-10.91 1.08-20.463 5.721-24.054 11.191C-5.195 41.216.3 67.853 20.193 80.905l.73-1.112c3.191-4.847 2.735-11.055-.799-15.322v-.045c-8.22-10.079-9.36-24.72-1.835-36.16C26.61 15.67 42.685 11.22 56.114 17.031c0 0-11.4-8.059-24.122-6.81h-.023z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M62.544 22.32s-.342-4.086 1.482-7.037c1.824-2.951 5.7-5.845 10.602-5.539 4.925.307 5.723 1.442 5.723 1.442s.114 3.972-1.254 6.242-4.218 5.606-8.322 6.446c-4.104.829-8.231-1.555-8.231-1.555z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M61.062 21.173s-.456-3.972 2.28-7.944c2.736-3.973 5.7-4.563 5.7-4.563S68.7 3.218 66.078.608c.228-.057-3.124.08-6.042 3.291-2.577 2.815-4.104 7.264-2.964 11.577 1.14 4.312 3.99 5.697 3.99 5.697z"
+              ></path>
+            </g>
+          </svg>
+          <span id="logoText"></span>
+        </a>
+
+        <div class="searchBar">
+          <input type="search" id="searchInput" />
+          <div class="searchIcon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="9.5 9.5 20.5 20.5"
+              version="1.1"
+            >
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g transform="translate(-311, -68)">
+                  <g transform="translate(128, 64)">
+                    <g
+                      transform="translate(203, 24) scale(-1, 1) translate(-203, -24)translate(183, 4)"
+                    >
+                      <path
+                        d="M29.7,28.3 L25.2,23.8 C26.3,22.4 27,20.5 27,18.5 C27,13.8 23.2,10 18.5,10 C13.8,10 10,13.8 10,18.5 C10,23.2 13.8,27 18.5,27 C20.5,27 22.3,26.3 23.8,25.2 L28.3,29.7 C28.5,29.9 28.8,30 29,30 C29.2,30 29.5,29.9 29.7,29.7 C30.1,29.3 30.1,28.7 29.7,28.3 Z M12,18.5 C12,14.9 14.9,12 18.5,12 C22.1,12 25,14.9 25,18.5 C25,20.3 24.3,21.9 23.1,23.1 C23.1,23.1 23.1,23.1 23.1,23.1 C23.1,23.1 23.1,23.1 23.1,23.1 C21.9,24.3 20.3,25 18.5,25 C14.9,25 12,22.1 12,18.5 Z"
+                        fill="#fff"
+                        fill-rule="nonzero"
+                        transform="translate(20, 20) scale(-1, 1) translate(-20, -20)"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="login">
+        <div class="loginLogo">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              id="smartphone"
+              stroke="none"
+              fill="none"
+              fill-rule="evenodd"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+            >
+              <g id="Group" stroke="currentColor">
+                <rect
+                  id="Rectangle"
+                  stroke-width="2"
+                  x="5"
+                  y="2"
+                  width="14"
+                  height="20"
+                  rx="2"
+                ></rect>
+                <line
+                  x1="12"
+                  y1="18"
+                  x2="12.01"
+                  y2="18"
+                  id="Path"
+                  stroke-width="2"
+                ></line>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <a href="#">
+          <button id="loginButton"></button>
+        </a>
+      </div>
+    </div>
+    <!-- end header -->
+
+    <!-- start login -->
+    <div id="myPopup" class="custom-popup-overlay">
+      <div class="custom-popup-box">
+        <div class="custom-popup-header">
+          <button class="custom-close-btn" id="closePopupBtn">×</button>
+        </div>
+        <div class="custom-popup-content">
+          <h2 id="popupTitle"></h2>
+          <p id="popupSubtitle"></p>
+          <form action="" class="login-form">
+            <label for="" id="popupLabel"></label>
+            <input type="text" class="login-num" />
+          </form>
+          <a href="#" class="SMS" id="smsButton"></a>
+          <a href="#" class="CALL" id="callButton"></a>
+        </div>
+      </div>
+    </div>
+    <!-- end login -->
+
+    <!-- start mobileNavBar -->
+    <div class="mobileNavBar">
+      <div class="top">
+        <div class="item-1">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="chevron-up"
+            >
+              <g transform="matrix(1 0 0 -1 0 24)">
+                <path
+                  d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="item-2">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            title="location"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#3468cc"
+            fill="#3468cc"
+            stroke-width="0.1"
+          >
+            <path
+              d="M12,2 C16.418278,2 20,5.66312472 20,10.1818181 C20,16.5454545 12,22 12,22 C12,22 4,16.5454545 4,10.1818181 C4,5.66312472 7.58172205,2 12,2 Z M12,7 C10.3431458,7 9,8.34314575 9,10 C9,11.6568542 10.3431458,13 12,13 C13.6568542,13 15,11.6568542 15,10 C15,8.34314575 13.6568542,7 12,7 Z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="item-3">
+          <label class="toggle">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="item-4">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="chevron-up"
+            >
+              <g transform="matrix(1 0 0 -1 0 24)">
+                <path
+                  d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="navbarSearch">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="search2"
+            >
+              <g transform="translate(2 2)">
+                <path
+                  d="M19.7 18.3l-4.5-4.5c1.1-1.4 1.8-3.3 1.8-5.3C17 3.8 13.2 0 8.5 0S0 3.8 0 8.5 3.8 17 8.5 17c2 0 3.8-.7 5.3-1.8l4.5 4.5c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4zM2 8.5C2 4.9 4.9 2 8.5 2S15 4.9 15 8.5c0 1.8-.7 3.4-1.9 4.6A6.42 6.42 0 0 1 8.5 15C4.9 15 2 12.1 2 8.5z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="navbarCategory">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="categories"
+            >
+              <g transform="translate(2 2)">
+                <path
+                  d="M8 0H1C.4 0 0 .4 0 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1zM7 7H2V2h5v5zm12-7h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1V1c0-.6-.4-1-1-1zm-1 7h-5V2h5v5zm1 4h-7c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1zm-1 7h-5v-5h5v5zM8 11H1c-.6 0-1 .4-1 1v7c0 .6.4 1 1 1h7c.6 0 1-.4 1-1v-7c0-.6-.4-1-1-1zm-1 7H2v-5h5v5z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="navbarOffer">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="offers"
+            >
+              <g transform="translate(2 2)">
+                <path
+                  d="M20.108 8.816L11.59.297C11.392.1 11.193 0 10.896 0H.991C.396 0 0 .396 0 .99v9.906c0 .297.1.496.297.694l8.519 8.518c.594.595 1.288.892 2.08.892.793 0 1.585-.297 2.08-.892l7.132-7.132c1.19-1.188 1.19-2.971 0-4.16zm-1.386 2.774l-7.132 7.132a.958.958 0 0 1-1.387 0L1.98 10.5V1.981H10.5l8.222 8.222a.958.958 0 0 1 0 1.387zM6.637 5.25c.198.198.297.396.297.693 0 .298-.1.496-.297.694-.198.198-.396.297-.694.297-.297 0-.495-.1-.693-.297-.1-.1-.198-.198-.198-.297-.1-.1-.1-.298-.1-.397 0-.297.1-.495.298-.693.297-.297.693-.396 1.09-.198.099 0 .198.099.297.198z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="navbarAcount">
+          <a href="#">
+            <svg
+              fill="#fff"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              title="profile"
+            >
+              <g transform="translate(2 2)">
+                <path
+                  d="M18 17v2c0 .6-.4 1-1 1s-1-.4-1-1v-2c0-1.7-1.3-3-3-3H5c-1.7 0-3 1.3-3 3v2c0 .6-.4 1-1 1s-1-.4-1-1v-2c0-2.8 2.2-5 5-5h8c2.8 0 5 2.2 5 5zM4 5c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5zm2 0c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3-3 1.3-3 3z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end mobileNavBar -->
+
+    <!-- start desktop menu -->
+    <nav class="deskMenu">
+      <ul></ul>
+    </nav>
+    <!-- end desktop menu -->
+
+    <!-- start products -->
+    <div class="productContainer">
+      <div class="productFilters">
+        <div class="Category">
+          <svg
+            fill="#fff"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            title="chevron-down"
+            style="transform: rotate(0deg)"
+          >
+            <g>
+              <path
+                d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="CategoryItems"></div>
+        <div class="categoryPrice">
+          <svg
+            fill="#fff"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            title="chevron-down"
+            style="transform: rotate(0deg)"
+          >
+            <g>
+              <path
+                d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="inputWrapper">
+          <div class="inputT">
+            <input type="text" value="۲٫۰۰۰" />
+            تومان
+          </div>
+          <div class="inputB">
+            <input type="text" value="۸۵۲٫۰۰۰٫۰۰۰" />
+            تومان
+          </div>
+          <div class="Btns">
+            <a href="#" class="rFilterBtn"><button>اعمال فیلتر</button></a>
+            <a href="#" class="lFilterBtn"><button>حذف</button></a>
+          </div>
+        </div>
+        <div class="categorySearch">
+          <svg
+            fill="#fff"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            title="chevron-down"
+            style="transform: rotate(0deg)"
+          >
+            <g>
+              <path
+                d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="categorySearchInput">
+          <input type="text" />
+        </div>
+        <div class="listPrice">
+          <a href="#"></a>
+        </div>
+        <div class="mostVisitedCategory">
+          <span></span>
+          <a href="#"></a>
+          <a href="#"></a>
+          <a href="#"></a>
+        </div>
+      </div>
+      <div class="products">
+        <div class="productsHeader"></div>
+        <div class="productsTitle">
+          <div class="top">
+            <span></span>
+          </div>
+          <div class="bottom">
+            <div class="item-1">
+              <label class="toggle">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                title="location"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#3468cc"
+                fill="#3468cc"
+                stroke-width="0.1"
+              >
+                <path
+                  d="M12,2 C16.418278,2 20,5.66312472 20,10.1818181 C20,16.5454545 12,22 12,22 C12,22 4,16.5454545 4,10.1818181 C4,5.66312472 7.58172205,2 12,2 Z M12,7 C10.3431458,7 9,8.34314575 9,10 C9,11.6568542 10.3431458,13 12,13 C13.6568542,13 15,11.6568542 15,10 C15,8.34314575 13.6568542,7 12,7 Z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="item-2">
+              <label class="toggle">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <div class="item-3">
+              <a href="#">
+                <svg
+                  fill="#fff"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  title="chevron-up"
+                >
+                  <g transform="matrix(1 0 0 -1 0 24)">
+                    <path
+                      d="M18.7 9.7l-6 6c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3l-6-6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l5.3 5.3 5.3-5.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4z"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="productsItem"></div>
+      </div>
+    </div>
+    <!-- end products -->
+
+    <script src="./axios/dist/axios.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

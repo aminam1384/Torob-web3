@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: iranYekan;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: iranYekan;
+    src: url(../fonts/IRANYekanWeb.eot);
+}
+@font-face {
+    font-family: iranYekan;
+    src: url(../fonts/IRANYekanWeb.ttf);
+}
+@font-face {
+    font-family: iranYekan;
+    src: url(../fonts/IRANYekanWeb.woff);
+}
+@font-face {
+    font-family: iranYekan;
+    src: url(../fonts/IRANYekanWeb.woff2);
+}
+
+body{
+    background-color: #15202B;
+}

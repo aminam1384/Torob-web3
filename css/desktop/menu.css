@@ -1,0 +1,28 @@
+.deskMenu {
+  display: block;
+  width: 100%;
+  background-color: #212b36;
+  padding: 15px 35px;
+  ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    li {
+      a {
+        all: unset;
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+      }
+      &:hover {
+        a {
+          color: #f43f5e;
+        }
+      }
+    }
+  }
+}

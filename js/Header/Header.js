@@ -1,0 +1,28 @@
+async function Header() {
+  try {
+    // 1. تغییر آدرس به آدرس گیت‌هاب (Raw URL)
+    let data = await fetch("https://aminam1384.github.io/jsonServer/db.json");
+    let res = await data.json();
+
+    // 2. دسترسی به آرایه Header داخل آبجکت اصلی
+    let headerData = res.Header; // چون res یک آبجکت است و Header یکی از کلیدهای آن است
+
+    // 3. پیدا کردن آیتم‌ها با مقایسه idها
+    // در فایل شما idها عدد هستند (1, 2, 3, 4) نه رشته
+    let title = headerData.find((item) => item.id === 1);
+    let logo = headerData.find((item) => item.id === 2);
+    let search = headerData.find((item) => item.id === 3);
+    let login = headerData.find((item) => item.id === 4);
+
+    // 4. قرار دادن مقادیر در DOM
+    document.getElementById("titleMobile").textContent = title?.text || "";
+    document.getElementById("logoText").textContent = logo?.text || "";
+    document.getElementById("searchInput").placeholder =
+      search?.placeholder || "";
+    document.getElementById("loginButton").textContent = login?.text || "";
+  } catch (error) {
+    console.error("خطا:", error);
+  }
+}
+
+export default Header;
