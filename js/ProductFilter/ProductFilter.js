@@ -1,13 +1,11 @@
 async function ProductFilters() {
   try {
-    // 1. تغییر آدرس به گیت‌هاب
+
     let data = await fetch("https://aminam1384.github.io/jsonServer/db.json");
     let res = await data.json();
 
-    // 2. دسترسی به کلید ProductFilters داخل آبجکت اصلی
     let filtersData = res.ProductFilters;
 
-    // دسته‌بندی دقیق‌تر
     document
       .querySelector(".Category")
       .insertAdjacentHTML("beforeend", filtersData.category);

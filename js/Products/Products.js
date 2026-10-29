@@ -1,13 +1,11 @@
 async function Products() {
   try {
-    // 1. تغییر آدرس به گیت‌هاب
+
     let data = await fetch("https://aminam1384.github.io/jsonServer/db.json");
     let res = await data.json();
 
-    // 2. دسترسی به کلید Products داخل آبجکت اصلی
     let productsData = res.Products;
 
-    // مسیر (breadcrumb)
     let breadcrumb = document.querySelector(".productsHeader");
     breadcrumb.innerHTML = `<a href="#">${productsData.breadcrumb.home}</a> > <a href="#">${productsData.breadcrumb.current}</a>`;
 
